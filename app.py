@@ -7,8 +7,6 @@ import pandas as pd
 # Header
 st.title("Blood Donation Prediction")
 st.header("Made by Belal Ahmed Siddiqui")
-st.image(r"C:\Users\lucius seneca\CampusX\Project\Blood Donation Prediction\project\Give Life_ Predict Blood Donations\datasets\xco2_8jtl_220606.jpg", use_column_width=True)
-
 # Load the trained model
 with open('logistic_regression_model.pkl', 'rb') as file:
     model = pickle.load(file)
