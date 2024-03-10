@@ -37,7 +37,7 @@ st.sidebar.header("Input Features")
 recency = st.sidebar.slider("Recency (months)", 0, 100, 50)
 frequency = st.sidebar.slider("Frequency (times)", 0, 50, 25)
 time = st.sidebar.slider("Time (months)", 0, 100, 50)
-monetary_log = st.sidebar.slider("Monetary Log", 0.0, 5.0, 2.5)
+monetary_log = st.sidebar.slider("Monetary Log", 0.0, 50.0, 2.5)
 
 # Prediction
 if st.sidebar.button("Predict"):
