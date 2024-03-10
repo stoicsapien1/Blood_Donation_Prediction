@@ -7,6 +7,15 @@ import pandas as pd
 # Header
 st.title("Blood Donation Prediction")
 st.header("Made by Belal Ahmed Siddiqui")
+st.write('''Features:
+
+Recency: Months since the last donation (numerical)
+
+Frequency: Total number of blood donations made (numerical)
+
+Monetary: Total volume of blood donated in cubic centimeters (numerical)
+
+Time: Months since the first donation (numerical)''')
 # Load the trained model
 with open('logistic_regression_model.pkl', 'rb') as file:
     model = pickle.load(file)
