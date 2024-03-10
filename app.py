@@ -15,7 +15,7 @@ Frequency: Total number of blood donations made (numerical)
 
 Monetary: Total volume of blood donated in cubic centimeters (numerical)
 
-Time: Months since the first donation (numerical)'''
+Time: Months since the first donation (numerical)''')
 st.markdown("[Click here to visit Github](https://github.com/stoicsapien1/Blood_Donation_Prediction)")
 
 
