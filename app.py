@@ -15,37 +15,11 @@ Frequency: Total number of blood donations made (numerical)
 
 Monetary: Total volume of blood donated in cubic centimeters (numerical)
 
-Time: Months since the first donation (numerical)''')
-st.write('''VARIOUS STEPS INCORPORATED 
-Data Loading and Preprocessing:
-Loaded the dataset from a CSV file (transfusion.data).
-Renamed the target column to "target".
-Checked the data types and basic information about the dataset.
+Time: Months since the first donation (numerical)'''
+st.markdown("[Click here to visit Github](https://github.com/stoicsapien1/Blood_Donation_Prediction)")
 
-Data Splitting:
 
-Split the dataset into training and testing sets using train_test_split() from sklearn.model_selection.
 
-Model Training with TPOT:
-Imported TPOTClassifier from tpot.
-Trained the TPOTClassifier model using the training data (X_train, y_train) to find the best pipeline.
-Used ROC AUC score (roc_auc_score) to evaluate the model's performance on the testing data.
-
-Log Transformation:Normalized the specified column ("Monetary (c.c. blood)") using log transformation.
-Checked the variance of the normalized data.
-
-Model Training with Logistic Regression:
-
-Imported LogisticRegression from sklearn.linear_model.
-
-Trained a logistic regression model using the normalized training data (X_train_normed, y_train).
-Used ROC AUC score to evaluate the logistic regression model's performance on the testing data.
-
-Model Comparison:Compared the performance of the TPOT model and logistic regression model based on their AUC scores.
-Model Serialization:
-
-Serialized the trained logistic regression model using pickle and saved it to a file (logistic_regression_model.pkl).
-Demonstrated loading the saved model from the file for future use.''')
 # Load the trained model
 with open('logistic_regression_model.pkl', 'rb') as file:
     model = pickle.load(file)
