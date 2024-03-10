@@ -16,7 +16,8 @@ Frequency: Total number of blood donations made (numerical)
 Monetary: Total volume of blood donated in cubic centimeters (numerical)
 
 Time: Months since the first donation (numerical)''')
-st.write(''' Data Loading and Preprocessing:
+st.write('''VARIOUS STEPS INCORPORATED 
+Data Loading and Preprocessing:
 
 Loaded the dataset from a CSV file (transfusion.data).
 Renamed the target column to "target".
