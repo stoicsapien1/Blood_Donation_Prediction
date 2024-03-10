@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 # Header
 st.title("Blood Donation Prediction")
-st.header("Made by Belal Ahmed Siddiqui")
+
 st.write('''Features:
 
 Recency: Months since the last donation (numerical)
