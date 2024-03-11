@@ -1,47 +1,52 @@
-Blood Donation Prediction using Machine Learning
 
-This repository contains code for predicting blood donation likelihood using machine learning models. The dataset used in this project (transfusion.data) contains information about individuals' blood donation history.
+# Blood Donation Prediction using Machine Learning 💉🤖
 
-Steps Taken:
+This repository contains code for predicting blood donation likelihood using machine learning models. The dataset used in this project (`transfusion.data`) contains information about individuals' blood donation history.
 
-Data Loading and Preprocessing:
+## Steps Taken 📝
 
-Loaded the dataset from a CSV file (transfusion.data).
-Renamed the target column to "target".
-Checked the data types and basic information about the dataset.
+### Data Loading and Preprocessing 📊
 
-Data Splitting:
+- Loaded the dataset from a CSV file (`transfusion.data`).
+- Renamed the target column to "target".
+- Checked the data types and basic information about the dataset.
 
-Split the dataset into training and testing sets using train_test_split() from sklearn.model_selection.
+### Data Splitting 📂
 
-Model Training with TPOT:
+- Split the dataset into training and testing sets using `train_test_split()` from `sklearn.model_selection`.
 
-Trained the TPOTClassifier model to find the best pipeline for predicting blood donation likelihood.
-Evaluated the model's performance on the testing data using ROC AUC score.
+### Model Training with TPOT 🚀
 
-Log Transformation:
+- Trained the `TPOTClassifier` model to find the best pipeline for predicting blood donation likelihood.
+- Evaluated the model's performance on the testing data using ROC AUC score.
 
-Normalized the specified column ("Monetary (c.c. blood)") using log transformation.
+### Log Transformation 📉
 
-Checked the variance of the normalized data.
+- Normalized the specified column ("Monetary (c.c. blood)") using log transformation.
+- Checked the variance of the normalized data.
 
-Model Training with Logistic Regression:
+### Model Training with Logistic Regression 📈
 
-Trained a logistic regression model using the normalized training data.
+- Trained a logistic regression model using the normalized training data.
+- Evaluated the logistic regression model's performance on the testing data using ROC AUC score.
 
-Evaluated the logistic regression model's performance on the testing data using ROC AUC score.
+### Model Comparison 📊
 
-Model Comparison:
+- Compared the performance of the TPOT model and logistic regression model based on their AUC scores.
 
-Compared the performance of the TPOT model and logistic regression model based on their AUC scores.
+### Model Serialization 📦
 
-Model Serialization:
+- Serialized the trained logistic regression model using pickle and saved it to a file (`logistic_regression_model.pkl`).
+- Demonstrated loading the saved model from the file for future use.
 
-Serialized the trained logistic regression model using pickle and saved it to a file (logistic_regression_model.pkl).
-Demonstrated loading the saved model from the file for future use.
+## Requirements 📋
 
-Requirements:
+- Python 3
 
-Python 3
+### Libraries 📚
 
-Libraries: numpy, pandas, streamlit, scikit-learn, tpot
+- numpy
+- pandas
+- streamlit
+- scikit-learn
+- tpot
