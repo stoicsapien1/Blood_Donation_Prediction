@@ -33,6 +33,7 @@ def predict_donation(recency, frequency, time, monetary_log):
         return "Not Likely to Donate Blood"
 
 # Input fields for user input
+st.image("https://voicetrustmadurai.org/wp-content/uploads/2022/03/Blood-Donation-1.jpg",use_column_width=True)
 st.sidebar.header("Input Features")
 recency = st.sidebar.slider("Recency (months)", 0, 100, 50)
 frequency = st.sidebar.slider("Frequency (times)", 0, 50, 25)
