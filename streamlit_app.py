@@ -44,6 +44,10 @@ monetary_log = st.sidebar.slider("Monetary Log", 0.0, 50.0, 2.5)
 if st.sidebar.button("Predict"):
     prediction = predict_donation(recency, frequency, time, monetary_log)
     st.write("Prediction:", prediction)
+st.write("")
+
+st.write("")
 
 
-st.write("Made By Belal Ahmed Siddiqui")
+
+st.write("Made with ❤️ by Belal.")
