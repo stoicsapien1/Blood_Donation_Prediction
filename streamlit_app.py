@@ -50,4 +50,4 @@ st.write("")
 
 
 
-st.write("Made with ❤️ by Belal.")
+
